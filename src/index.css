@@ -12,3 +12,10 @@ body,
     background-color: #010026;
     @apply text-white
 }
+
+.skill {
+  /* background-color: #2CBCE9; */
+  width: 120px;
+  padding: 0.25rem;
+  border-radius: 15px;
+}
