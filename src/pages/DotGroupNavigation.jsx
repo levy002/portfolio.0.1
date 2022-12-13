@@ -13,7 +13,7 @@ const DotGroupNavigation = ({ selectedPage, setSelectedPage }) => {
         pages.map((page) => (
           <AnchorLink
             key={page}
-            className={`${selectedPage === page ? selectedStyles : 'bg-red'} w-3 h-3 rounded-full `}
+            className={`${selectedPage === page ? selectedStyles : 'backdrop-opacity-10 backdrop-invert bg-white/30'} w-3 h-3 rounded-full `}
             href={`#${page}`}
             onClick={() => setSelectedPage(page)}
           />
