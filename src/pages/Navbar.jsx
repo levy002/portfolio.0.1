@@ -22,7 +22,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopofPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-  const pages = ['Home', 'Skills', 'Projects', 'Testmonials', 'Contact'];
+  const pages = ['Home', 'Skills', 'Projects', 'Contact'];
   const navbarBackground = isTopofPage ? '' : 'bg-blue';
 
   return (
@@ -47,7 +47,7 @@ const Navbar = ({ isTopofPage, selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className="rounded-full bg-red p-2"
+            className="rounded-full bg-yellow p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
             type="button"
           >
@@ -77,6 +77,7 @@ const Navbar = ({ isTopofPage, selectedPage, setSelectedPage }) => {
                     page={page}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+
                   />
                 ))
             }

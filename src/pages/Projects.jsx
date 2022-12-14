@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import { motion } from 'framer-motion';
+import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import LineGradient from '../components/lineGradient';
 
 const projects = [
@@ -16,7 +17,7 @@ const projects = [
   },
   {
     title: 'Awesome-Books',
-    src: '../assests/awesomeBooks.png',
+    src: '../assets/awesomeBooks.png',
     description:
       'Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.',
     technologies: ['Javascript', 'Html', 'css', 'Webpack'],
@@ -25,7 +26,7 @@ const projects = [
   },
   {
     title: 'TRAnzKT',
-    src: '../assests/TRanzakt.png',
+    src: '../assets/TRanzakt.png',
     description: [
       'TRAnzKT App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.',
     ],
@@ -35,7 +36,7 @@ const projects = [
   },
   {
     title: 'ShowTime',
-    src: '../assests/showtime.png',
+    src: '../assets/showtime.png',
     description: [
       'ShowTime is a web application based on an external TV Maze API. The API provides data about TV Shows. We then built the webapp around it. The webapp has 2 user interfaces (pages): The Homepage and the Comment modal. On the Homepage, each Show can be liked and commented on.',
     ],
@@ -45,7 +46,7 @@ const projects = [
   },
   {
     title: 'Bookstore',
-    src: '../assests//bookstore.png',
+    src: '../assets/bookstore.png',
     description: [
       'Bookstore-CMS is an SPA made for all the book lovers. It enables users to track the book progress, add new book and delete book.',
     ],
@@ -69,19 +70,43 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = (project) => {
+const Project = ({
+  title, src, stack, sourceCode, liveDemo,
+}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{project.title}</p>
-        <p className="mt-7">
-          {projects[0].description}
-        </p>
+        <p className="ss:text-3xl text-2xl font-playfair text-blue font-bold">{title}</p>
+        <div className="flex gap-2 mt-4">
+          {
+            stack.map((s) => (
+              <p key={s} className=" text-deep-blue font-semifold text-xl">{s}</p>
+            ))
+          }
+        </div>
+        <div className="flex gap-5 mt-5 items-center">
+          <a
+            href={sourceCode}
+            className="border-1 rounded-full bg-red p-2"
+            target="_blank"
+            rel="nonreferrer noreferrer"
+          >
+            <AiFillGithub size={24} />
+          </a>
+          <a
+            href={liveDemo}
+            className="border-1 rounded-full bg-red p-2"
+            target="_blank"
+            rel="nonreferrer noreferrer"
+          >
+            <AiFillEye size={22} />
+          </a>
+        </div>
       </div>
-      <img src="../assets/doctors.png" alt={project.title} />
+      <img src={src} alt={title} />
     </motion.div>
   );
 };
@@ -124,20 +149,18 @@ const Projects = () => (
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* ROW 1 */}
-        <div
-          className="p-3 bg-red
-              max-w-[400px] max-h-[400px]"
-        />
         {
             projects.map((project) => (
-              <Project project={project} key={project.title} />
+              <Project
+                key={project.title}
+                title={project.title}
+                src={project.src}
+                stack={project.technologies}
+                sourceCode={project.seeSourceLink}
+                liveDemo={project.seeLiveLink}
+              />
             ))
         }
-        <div
-          className="p-3 bg-blue
-              max-w-[400px]"
-        />
       </motion.div>
     </div>
   </section>
