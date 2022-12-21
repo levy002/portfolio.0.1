@@ -1,12 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
   <h1><b>Levy's Portfolio</b></h1>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -34,10 +31,7 @@
 
 # 📖 [Levy's Portfolio] <a name="about-project"></a>
 
-
-
 Topics
-
 
 **[My portfolio]** is a personal website which describes my personal information about my career and visitor is able to find the the recent projects along with my skills and can contact me anytime.
 
