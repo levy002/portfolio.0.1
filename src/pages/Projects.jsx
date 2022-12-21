@@ -106,7 +106,7 @@ const Project = ({
           </a>
         </div>
       </div>
-      <img src={src} alt={title} />
+      <img src={src} alt={title} className="h-[220px] w-full" />
     </motion.div>
   );
 };
