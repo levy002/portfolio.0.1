@@ -8,9 +8,9 @@ html,
 body,
 #root,
 .app {
-    height: 100%;
-    background-color: #010026;
-    @apply text-white
+  height: 100%;
+  background-color: #010026;
+  @apply text-white
 }
 
 .skill {
