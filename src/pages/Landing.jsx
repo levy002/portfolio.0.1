@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
@@ -20,16 +19,16 @@ const Landing = ({ setSelectedPage }) => {
             isAboveMediumScreens ? (
               <div className="border-2 p-2 border-blue rounded-t-[400px]">
                 <img
-                  src="../assets/profile-image.png"
+                  src="../assets/myProfile.JPG"
                   alt="profile"
-                  className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                  className="rounded-t-[400px] filter saturate-150 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
                 />
               </div>
             ) : (
               <img
-                src="../assets/profile-image.png"
+                src="../assets/myProfile.JPG"
                 alt="profile"
-                className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                className="rounded-t-[400px] filter saturate-150 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
               />
             )
         }
@@ -71,13 +70,14 @@ const Landing = ({ setSelectedPage }) => {
           }}
           className="flex mt-5 justify-center md:justify-start"
         >
-          <AnchorLink
+          <a
             className="bg-gradient-rainblue cursor-pointer text-deep-blue rounded-sm py-3 px-7 font-semibold
               hove:bg-blue hover:text-whitw transition duration-500"
             onClick={() => setSelectedPage('contact')}
+            href="#contact"
           >
             Contact me
-          </AnchorLink>
+          </a>
 
           <a
             className="bg-gradient-rainblue py-0.5 pr-0.5"
