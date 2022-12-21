@@ -83,12 +83,13 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/48a1fcbd7d70dfa963c3de8cb6a624ca"
             method="POST"
           >
             <input
               className={inputStyles}
               type="text"
+              name="name"
               placeholder="NAME"
               {...register('name', {
                 required: true,
@@ -105,6 +106,7 @@ const Contact = () => {
             <input
               className={`${inputStyles} p-3 mt-5`}
               type="text"
+              name="email"
               placeholder="EMAIL"
               {...register('email', {
                 required: true,
