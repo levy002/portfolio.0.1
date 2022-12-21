@@ -115,7 +115,7 @@ const Projects = () => (
   <section id="projects" className="py-48">
     {/* HEADINGS */}
     <motion.div
-      className="md:w-2/5 mx-auto text-center"
+      className="md:w-2/5 mx-auto text-center "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
@@ -135,8 +135,9 @@ const Projects = () => (
         </div>
       </div>
       <p className="mt-10 mb-10">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-        repudiandae dolore at ratione nulla vero.
+        Full Stack web developer who enjoys creating
+        beautiful and smooth websites to solve complex
+        problems and has a penchant for writing clean code. Check out my work.
       </p>
     </motion.div>
 

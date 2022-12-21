@@ -4,7 +4,9 @@ import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({
+  page, selectedPage, setSelectedPage, isMenuToggled, setIsMenuToggled,
+}) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
@@ -12,7 +14,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
             hover:text-yellow transition duration-500
         `}
       href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+      onClick={() => {
+        setSelectedPage(lowerCasePage);
+        setIsMenuToggled(!isMenuToggled);
+      }}
     >
       {page}
     </AnchorLink>
@@ -77,7 +82,8 @@ const Navbar = ({ isTopofPage, selectedPage, setSelectedPage }) => {
                     page={page}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-
+                    isMenuToggled={isMenuToggled}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                 ))
             }
