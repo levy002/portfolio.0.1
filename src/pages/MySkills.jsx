@@ -30,8 +30,8 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam
-            recusandae quas dolorem.
+            Building a successful product is a challenge. I am a fast pace lerner and
+            still hungry to acquire new technologies. Check out my skills.
           </p>
         </motion.div>
 
