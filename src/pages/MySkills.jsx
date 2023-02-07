@@ -64,16 +64,11 @@ const MySkills = () => {
       </div>
 
       <div className="flex justify-between md:mt-32 gap-2 flex-wrap items-center md:w-1/2 mx-auto">
-        <img
+        {/* <img
           src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
           alt="bootstrap"
           className="skill"
-        />
-        <img
-          src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-          alt="tailwind"
-          className="skill"
-        />
+        /> */}
         <img
           src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
           alt="javascript"
@@ -90,11 +85,6 @@ const MySkills = () => {
           className="skill"
         />
         <img
-          src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
-          alt="postgres"
-          className="skill"
-        />
-        <img
           src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white"
           alt=""
           rails
@@ -106,38 +96,48 @@ const MySkills = () => {
           className="skill"
         />
         <img
+          src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
+          alt="postgres"
+          className="skill"
+        />
+        <img
           src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white"
           alt="jest"
           className="skill"
         />
-        <img
+        {/* <img
           src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
           alt="mongo"
           className="skill"
-        />
-        <img
+        /> */}
+        {/* <img
           src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
           alt="express"
           className="skill"
-        />
+        /> */}
         <img
           src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"
           alt="postman"
           className="skill"
         />
-        <img
+        {/* <img
           src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"
           alt="vue"
           className="skill"
-        />
+        /> */}
         <img
           src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
           alt="github"
           className="skill"
         />
-        <img
+        {/* <img
           src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
           alt="nodejs"
+          className="skill"
+        /> */}
+        <img
+          src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+          alt="tailwind"
           className="skill"
         />
       </div>
