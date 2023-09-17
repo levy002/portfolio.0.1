@@ -117,20 +117,19 @@ const Project = ({
           </a>
 
           <>
-          {
+            {
            liveDemo !== 'none' ? (
-            <a
-            href={liveDemo}
-            className="border-1 rounded-full bg-red p-2"
-            target="_blank"
-            rel="nonreferrer noreferrer"
-          >
-            <AiFillEye size={22} />
-          </a>
+             <a
+               href={liveDemo}
+               className="border-1 rounded-full bg-red p-2"
+               target="_blank"
+               rel="nonreferrer noreferrer"
+             >
+               <AiFillEye size={22} />
+             </a>
            ) : null
           }
           </>
-         
         </div>
       </div>
       <img src={src} alt={title} className="h-[220px] w-full" />
