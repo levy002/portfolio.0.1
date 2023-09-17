@@ -82,7 +82,7 @@ const Landing = ({ setSelectedPage }) => {
           <a
             className="bg-gradient-rainblue py-0.5 pr-0.5"
             download
-            href="../assets/levy-resume.pdf"
+            href="../assets/Levy-Ukwishaka-rsm-1.pdf"
           >
             <div className="flex items-center gap-1 bg-deep-blue hover:text-red transtion duration-500 w-full h-full justify-center font-playfair px-10">
               <HiOutlineDocumentDownload />
