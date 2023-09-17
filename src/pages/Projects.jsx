@@ -6,14 +6,33 @@ import LineGradient from '../components/lineGradient';
 
 const projects = [
   {
+    title: 'Transaction Manager',
+    src: '../assets/trankt.png',
+    description: [
+      'Transaction Manager, an intuitive solution for efficiently managing personal transactions across various account types, including cash, bank, and mobile money. With our user-friendly interface, you can effortlessly track expenses, set budgets, and receive instant notifications for budget overruns, balance thresholds, and pending loans.',
+    ],
+    technologies: ['Nodejs', 'Expressjs', 'React', 'Redux', 'Tailwind'],
+    seeLiveLink: 'https://tranzkt.vercel.app/',
+    seeSourceLink: 'https://github.com/levy002/tranzkt',
+  },
+  {
     title: 'Doctors',
     src: '../assets/doctors.png',
     description: [
       'Doctor Appointment is a full stack application for book an appointment with doctor. This applications is responsive and users can load, create, and delete doctors and appointments. Users need to sign up or sign in to access application. They can sign up or sign in using the sign up and login forms.',
     ],
     technologies: ['React', 'Rails', 'Redux', 'CSS'],
-    seeLiveLink: 'https://appointment-app-frontend.netlify.app/',
+    seeLiveLink: 'none',
     seeSourceLink: 'https://github.com/ridaarif98/doctors_appointment_front_end',
+  },
+  {
+    title: 'Countries Info',
+    src: '../assets/countries.png',
+    description:
+      'This project is an interactive interface that fetches and displays a comprehensive list of countries. Users can easily filter the countries based on their preferences and navigate through the data using pagination. The country data is sourced from an external API.',
+    technologies: ['Typescript', 'React', 'Redux', 'Styled-Component'],
+    seeLiveLink: 'https://levy-ukwishaka-countries-info.netlify.app/',
+    seeSourceLink: 'https://github.com/levy002/countries_info',
   },
   {
     title: 'Awesome-Books',
@@ -31,7 +50,7 @@ const projects = [
       'TRAnzKT App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.',
     ],
     technologies: ['Rails', 'Tailwind', 'Rspec'],
-    seeLiveLink: 'dry-bastion-60998.herokuapp.com/',
+    seeLiveLink: 'none',
     seeSourceLink: 'https://github.com/levy002/budget-app',
   },
   {
@@ -96,7 +115,11 @@ const Project = ({
           >
             <AiFillGithub size={24} />
           </a>
-          <a
+
+          <>
+          {
+           liveDemo !== 'none' ? (
+            <a
             href={liveDemo}
             className="border-1 rounded-full bg-red p-2"
             target="_blank"
@@ -104,6 +127,10 @@ const Project = ({
           >
             <AiFillEye size={22} />
           </a>
+           ) : null
+          }
+          </>
+         
         </div>
       </div>
       <img src={src} alt={title} className="h-[220px] w-full" />
