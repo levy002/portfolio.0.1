@@ -140,6 +140,11 @@ const MySkills = () => {
           alt="tailwind"
           className="skill"
         />
+        <img
+          src="https://img.shields.io/badge/Typescript-0000FF?style=for-the-badge&logo=typescript&logoColor=white"
+          alt="typescript"
+          className="skill"
+        />
       </div>
     </section>
   );
