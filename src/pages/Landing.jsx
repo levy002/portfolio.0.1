@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import useMediaQuery from '../hooks/useMediaQuery';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
