@@ -72,24 +72,12 @@ const Landing = ({ setSelectedPage }) => {
         >
           <a
             className="bg-gradient-rainblue cursor-pointer text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hove:bg-blue hover:text-whitw transition duration-500"
+              hove:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage('contact')}
             href="#contact"
           >
             Contact me
           </a>
-
-{/*           <a
-            className="bg-gradient-rainblue py-0.5 pr-0.5"
-            download
-            href="../assets/Levy-Ukwishaka-rsm-1.pdf"
-          >
-            <div className="flex items-center gap-1 bg-deep-blue hover:text-red transtion duration-500 w-full h-full justify-center font-playfair px-10">
-              <HiOutlineDocumentDownload />
-              Resume
-            </div>
-
-          </a> */}
         </motion.div>
 
         <motion.div
