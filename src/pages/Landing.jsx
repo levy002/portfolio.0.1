@@ -79,7 +79,7 @@ const Landing = ({ setSelectedPage }) => {
             Contact me
           </a>
 
-          <a
+{/*           <a
             className="bg-gradient-rainblue py-0.5 pr-0.5"
             download
             href="../assets/Levy-Ukwishaka-rsm-1.pdf"
@@ -89,7 +89,7 @@ const Landing = ({ setSelectedPage }) => {
               Resume
             </div>
 
-          </a>
+          </a> */}
         </motion.div>
 
         <motion.div
